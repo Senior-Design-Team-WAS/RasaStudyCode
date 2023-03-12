@@ -1,0 +1,15 @@
+recipe: default.v1
+language: zh
+
+pipeline:
+#課本提供最適合中文的解
+- name: JiebaTokenizer
+- name: LanguageModelFeaturizer
+  model_name: bert
+  model_weights: bert-base-chinese
+- name: "DIETClassifier"
+  epochs: 100
+
+
+policies:
+

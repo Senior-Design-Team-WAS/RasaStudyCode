@@ -1,0 +1,44 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - 你好
+    - 您好
+    - 在嗎
+    - 嘿
+
+- intent: goodbye
+  examples: |
+    - 再見
+    - 掰掰
+    - 拜拜
+
+- intent: affirm
+  examples: |
+    - 是的
+    - 是
+    - 對
+    - 正確
+
+- intent: deny
+  examples: |
+    - 不
+    - 不是
+    - 不對
+    - 錯誤
+    - 不正確
+    - 錯了
+
+- intent: eat_search
+  examples: |
+    - 我好餓
+    - 附近有什麼吃的
+    - 推薦我一家餐廳
+    - 幫我找餐廳
+    - 推薦我吃的
+
+- intent: bot_challenge
+  examples: |
+    - 你是機器人嗎
+    - 你是人嗎
